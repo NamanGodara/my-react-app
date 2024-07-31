@@ -1,17 +1,59 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./style.css"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function Header(){
+   return(
+      <nav className="nav">
+    <img src="./logo19.png" alt="logo" className="nav-logo" />
+    <ul className="nav-items">
+      <li>Pricing</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+   )
+}
+function Footer(){
+   return(
+      <footer>
+      <small> @2021 zirool decelopment . all rights reservel.</small>
+   </footer>
+
+
+   )
+}
+function Maincontinent(){
+   return(
+      <div>
+         <h1>hello i am very excited doing these things</h1>
+          <ol>
+         <li>hi </li>
+         <li>about</li>
+         <li>contact</li>
+         <li>portfolio</li>
+      </ol>
+
+
+      </div>
+
+
+   )
+}
+
+
+
+
+
+
+function Page() {
+   return(
+      <div>
+      <Header/>   
+     <Maincontinent/>
+     <Footer/>
+      </div>
+   )
+}
+ReactDOM.render(<Page/>,document.getElementById("root"))

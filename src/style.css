@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .nav-logo {
+    width: 40px; /* Removed quotes */
+  }
+  
+  .nav-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-items li {
+    margin-left: 20px; /* Optional: Add some spacing between the items */
+  }
+  
